@@ -13,4 +13,7 @@ app.use('/products', ProductController);
 var InvoiceController = require('./invoice/InvoiceController');
 app.use('/invoices', InvoiceController);
 
+var InvoiceItemController = require('./invoiceItem/InvoiceItemController');
+app.use('/invoices/:invoice_id/items', InvoiceItemController);
+
 module.exports = app;
