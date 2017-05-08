@@ -3,9 +3,6 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
 
-/**
-* CUSTOMERS API
- */
 var Customer = require('./Customer');
 // CREATES A NEW Customer
 router.post('/', function (req, res) {
@@ -52,6 +49,5 @@ router.put('/:id', function (req, res) {
         res.status(200).send(customer);
     });
 });
-
 
 module.exports = router;
