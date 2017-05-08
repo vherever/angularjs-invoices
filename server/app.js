@@ -10,4 +10,7 @@ app.use('/customers', UserController);
 var ProductController = require('./product/ProductController');
 app.use('/products', ProductController);
 
+var InvoiceController = require('./invoice/InvoiceController');
+app.use('/invoices', InvoiceController);
+
 module.exports = app;
