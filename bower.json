@@ -1,0 +1,21 @@
+{
+  "name": "javascript-invoices",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "vherever"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vherever/angularjs-invoices",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
