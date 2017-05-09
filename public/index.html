@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="invoicesApp">
 <head>
     <meta charset="UTF-8">
     <title>Invoices App</title>
     <base href="/">
 
-    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/dist/css/bootstrap.css">
+    <!--Vendor dependencies-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -29,7 +31,22 @@
         </div>
     </nav>
 
-    <script type="text/javascript" src="vendors/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <div class="container">
+        <div ng-view></div>
+    </div> <!-- /container -->
+
+    <!--Vendor dependencies-->
+    <script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+
+    <!--App dependencies-->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers/InvoicesController.js"></script>
+    <script type="text/javascript" src="app/controllers/ProductsController.js"></script>
+    <script type="text/javascript" src="app/controllers/CustomersController.js"></script>
+
 </body>
 </html>
