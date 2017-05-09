@@ -1,3 +1,24 @@
 <div>
-    <h1>{{title}}</h1>
+    <a href="/product" class="btn btn-info btn-lg">Add New</a>
+    <h1>{{ title }}</h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th width="5%">No</th>
+            <th style="text-align: right">Name</th>
+            <th style="text-align: right">Price</th>
+            <th style="text-align: right" width="15%">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="product in data.products">
+            <td style="vertical-align: middle">{{ $index + 1 }}</td>
+            <td align="right" style="vertical-align: middle">{{ product.name }}</td>
+            <td align="right" style="vertical-align: middle">{{ product.price }}</td>
+            <td align="right">
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>

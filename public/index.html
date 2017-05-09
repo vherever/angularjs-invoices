@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" ng-controller="MainController" data-ng-init="init()">
         <div ng-view></div>
     </div> <!-- /container -->
 
@@ -44,6 +44,7 @@
 
     <!--App dependencies-->
     <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers/MainController.js"></script>
     <script type="text/javascript" src="app/controllers/InvoicesController.js"></script>
     <script type="text/javascript" src="app/controllers/ProductsController.js"></script>
     <script type="text/javascript" src="app/controllers/CustomersController.js"></script>

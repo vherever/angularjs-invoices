@@ -3,6 +3,7 @@
     angular.module('invoicesApp', [
         'ngRoute',
 
+        'invoicesApp.MainController',
         'invoicesApp.InvoicesController',
         'invoicesApp.ProductsController',
         'invoicesApp.CustomersController'
