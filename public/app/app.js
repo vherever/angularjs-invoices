@@ -6,6 +6,7 @@
         'invoicesApp.MainController',
         'invoicesApp.InvoicesController',
         'invoicesApp.ProductsController',
+        'invoicesApp.ProductController',
         'invoicesApp.CustomersController'
 
     ])
@@ -18,6 +19,10 @@
                     .when('/products', {
                         templateUrl: '/app/views/products.html',
                         controller: 'ProductsController'
+                    })
+                    .when('/product', {
+                        templateUrl: '/app/views/product.html',
+                        controller: 'ProductController'
                     })
                     .when('/customers', {
                         templateUrl: '/app/views/customers.html',
