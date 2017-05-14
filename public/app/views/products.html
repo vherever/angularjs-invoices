@@ -16,7 +16,8 @@
             <td align="right" style="vertical-align: middle">{{ product.name }}</td>
             <td align="right" style="vertical-align: middle">{{ product.price }}</td>
             <td align="right">
-
+                <a href="/product" class="btn btn-warning">Edit</a>
+                <button class="btn btn-danger" ng-click="onRemove(product._id)">X</button>
             </td>
         </tr>
         </tbody>

@@ -7,7 +7,8 @@
         'invoicesApp.InvoicesController',
         'invoicesApp.ProductsController',
         'invoicesApp.ProductController',
-        'invoicesApp.CustomersController'
+        'invoicesApp.CustomersController',
+        'invoicesApp.AjaxService'
 
     ])
         .config(function ($routeProvider, $locationProvider) {
