@@ -1,6 +1,6 @@
 (function () {
 
-    var ProductsController = function($scope, AjaxService) {
+    var ProductsController = function($scope, AjaxService, $rootScope) {
         $scope.title = 'Products';
 
         $scope.onRemove = function (id) {
@@ -11,6 +11,10 @@
                             $scope.data.products = res.data;
                         });
                 });
+        };
+
+        $scope.onEdit = function (product) {
+            $rootScope.product = product;
         }
     };
 

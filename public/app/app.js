@@ -25,6 +25,10 @@
                         templateUrl: '/app/views/product.html',
                         controller: 'ProductController'
                     })
+                    .when('/product/:id', {
+                        templateUrl: '/app/views/product.html',
+                        controller: 'ProductController'
+                    })
                     .when('/customers', {
                         templateUrl: '/app/views/customers.html',
                         controller: 'CustomersController'

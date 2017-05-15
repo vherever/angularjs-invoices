@@ -1,14 +1,26 @@
 (function () {
 
     var ProductController = function ($scope, $http, $location, $routeParams, AjaxService) {
-        $scope.title = 'Add Product';
+        if($routeParams.id) {
+            $scope.title = 'Edit Product';
+        } else {
+            $scope.title = 'Add Product';
+            $scope.product = {};
+        }
 
         $scope.onSubmit = function () {
-            AjaxService.postProduct($scope.product)
-                .then(function (res) {
-                    $scope.data.products.push(res.data);
-                    $location.path('/products');
-                });
+            if($routeParams.id) {
+                AjaxService.updateProduct($scope.product)
+                    .then(function () {
+                        $location.path('/products');
+                    })
+            } else {
+                AjaxService.postProduct($scope.product)
+                    .then(function (res) {
+                        $scope.data.products.push(res.data);
+                        $location.path('/products');
+                    });
+            }
         }
     };
 
