@@ -18,7 +18,8 @@
             <td style="vertical-align: middle" align="right">{{ customer.address }}</td>
             <td style="vertical-align: middle" align="right">{{ customer.phone }}</td>
             <td align="right">
-
+                <a href="/customer/{{customer._id}}" class="btn btn-warning" ng-click="onEdit(customer)">Edit</a>
+                <button class="btn btn-danger" ng-click="onRemove(customer._id)">X</button>
             </td>
         </tr>
         </tbody>

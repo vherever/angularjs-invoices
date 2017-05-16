@@ -9,7 +9,10 @@
             <label for="price">Price:</label>
             <input type="text" class="form-control" id="price" ng-model="product.price">
         </div>
-        <button type="submit" class="btn btn-info" ng-click="onSubmit(product)" style="float: right;">Submit</button>
-        <a class="btn btn-warning" href="/products" style="float: right; margin-right: 10px">Cancel</a>
+
+        <div class="form-group pull-right">
+            <button type="submit" class="btn btn-info" ng-click="onSubmit(product)" style="margin-right: 10px">Submit</button>
+            <a class="btn btn-warning" href="/products" style="float: right;">Cancel</a>
+        </div>
     </form>
 </div>

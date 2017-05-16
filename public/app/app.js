@@ -8,6 +8,7 @@
         'invoicesApp.ProductsController',
         'invoicesApp.ProductController',
         'invoicesApp.CustomersController',
+        'invoicesApp.CustomerController',
         'invoicesApp.AjaxService'
 
     ])
@@ -32,6 +33,14 @@
                     .when('/customers', {
                         templateUrl: '/app/views/customers.html',
                         controller: 'CustomersController'
+                    })
+                    .when('/customer', {
+                        templateUrl: '/app/views/customer.html',
+                        controller: 'CustomerController'
+                    })
+                    .when('/customer/:id', {
+                        templateUrl: '/app/views/customer.html',
+                        controller: 'CustomerController'
                     })
                     .when('/invoices', {
                         templateUrl: '/app/views/invoices.html',
