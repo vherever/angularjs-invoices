@@ -2,11 +2,13 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
 
 var Invoice = require('./Invoice');
 // CREATES A NEW Invoice
 router.post('/', function (req, res) {
     Invoice.create({
+            customer_id: req.body.customer_id,
             discount : req.body.discount,
             total : req.body.total
         },

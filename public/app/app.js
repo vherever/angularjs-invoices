@@ -5,6 +5,7 @@
 
         'invoicesApp.MainController',
         'invoicesApp.InvoicesController',
+        'invoicesApp.InvoiceController',
         'invoicesApp.ProductsController',
         'invoicesApp.ProductController',
         'invoicesApp.CustomersController',
@@ -45,6 +46,14 @@
                     .when('/invoices', {
                         templateUrl: '/app/views/invoices.html',
                         controller: 'InvoicesController'
+                    })
+                    .when('/invoice', {
+                        templateUrl: '/app/views/invoice.html',
+                        controller: 'InvoiceController'
+                    })
+                    .when('/invoice/:id', {
+                        templateUrl: '/app/views/invoice.html',
+                        controller: 'InvoiceController'
                     })
 
 

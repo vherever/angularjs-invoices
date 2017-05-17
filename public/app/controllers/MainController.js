@@ -17,6 +17,10 @@
                 .then(function (res) {
                     $scope.data.customers = res.data;
                 });
+            AjaxService.getInvoices()
+                .then(function (res) {
+                    $scope.data.invoices = res.data;
+                })
         };
     };
 

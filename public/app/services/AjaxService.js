@@ -24,7 +24,16 @@
                 return $http.delete('/api/products/' + id);
             },
             updateProduct: function () {
-                return $http.put('/api/products/' + $routeParams.id, $rootScope.product)
+                return $http.put('/api/products/' + $routeParams.id, $rootScope.product);
+            },
+            getInvoices: function () {
+                return $http.get('/api/invoices');
+            },
+            postInvoice: function (invoice) {
+                return $http.post('/api/invoices', invoice);
+            },
+            deleteInvoice: function (id) {
+                return $http.delete('/api/invoices/' + id);
             }
         };
     };
