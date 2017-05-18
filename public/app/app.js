@@ -10,7 +10,8 @@
         'invoicesApp.ProductController',
         'invoicesApp.CustomersController',
         'invoicesApp.CustomerController',
-        'invoicesApp.AjaxService'
+        'invoicesApp.AjaxService',
+        'angularjs-dropdown-multiselect'
 
     ])
         .config(function ($routeProvider, $locationProvider) {

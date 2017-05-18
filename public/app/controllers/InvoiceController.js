@@ -8,6 +8,20 @@
             $scope.invoice = {};
         }
 
+        $scope.products = [];
+
+        $scope.onItemSelect = function () {
+            console.log('onItemSelect');
+            // AjaxService.postItem($scope.products[$scope.products.length - 1].id)
+            //     .then(function (res) {
+            //
+            //     });
+        };
+
+        $scope.onItemDeselect = function () {
+            console.log('onItemDeselect');
+        };
+
         $scope.onSubmit = function () {
             if($routeParams.id) {
                 // AjaxService.updateProduct($scope.product)

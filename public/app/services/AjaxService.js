@@ -34,6 +34,9 @@
             },
             deleteInvoice: function (id) {
                 return $http.delete('/api/invoices/' + id);
+            },
+            postItem: function (id) {
+                return $http.post('/api/invoices/' + id + '/items/');
             }
         };
     };
